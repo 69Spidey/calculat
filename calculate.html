@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: indigo;
+        }
+
+        h1 {
+            background-image: linear-gradient(blue, red);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            font-size: 90px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            height: auto;
+            width: 550px;
+            background-color: black;
+            border-radius: 25px;
+            font-size: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            column-gap: 5px;
+            row-gap: 20px;
+            padding: 10px;
+            margin: auto;
+        }
+
+        .item {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: transparent;
+        }
+
+        input[type=text] {
+            padding: 10px 20px;
+            width: 85%;
+            height: 60px;
+            border-radius: 20px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: indigo;
+            height: 100px;
+            width: 100px;
+            color: #fff;
+            font-size: 40px;
+            border: none;
+            border-radius: 100%;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        .btn {
+            background-color: silver;
+            color: black;
+            font-weight: bold;
+        }
+
+        .btn1 {
+            background-color: gray;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .btn2 {
+            background-color: orange;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .btn3{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .btn4{
+            background-color: gray;
+            color: #fff;
+            font-weight: bold;
+            height: 100px;
+            width: 250px;
+            border-radius: 95px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Calcultor</h1>
+    <div class="container">
+        <div class="item"><input type="text"></div>
+        <button class="btn">AC</button>
+        <button class="btn">+/-</button>
+        <button class="btn">%</button>
+        <button class="btn2">/</button>
+        <button class="btn1">7</button>
+        <button class="btn1">8</button>
+        <button class="btn1">9</button>
+        <button class="btn2">X</button>
+        <button class="btn1">4</button>
+        <button class="btn1">5</button>
+        <button class="btn1">6</button>
+        <button class="btn2">-</button>
+        <button class="btn1">1</button>
+        <button class="btn1">2</button>
+        <button class="btn1">3</button>
+        <button class="btn2">+</button>
+        <div class="btn3">
+            <button class="btn4">0</button>
+        </div>
+        <button class="btn1">.</button>
+        <button class="btn2">=</button>
+    </div>
+</body>
+
+</html>
